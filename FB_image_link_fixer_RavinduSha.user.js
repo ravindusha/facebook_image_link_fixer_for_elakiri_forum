@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Facebook image link fixer
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  FB image link fixer on elakiri.com forum for SLT internet connections
 // @author       RavinduSha
 // @match        https://www.elakiri.com/forum/showthread.php?*=*
