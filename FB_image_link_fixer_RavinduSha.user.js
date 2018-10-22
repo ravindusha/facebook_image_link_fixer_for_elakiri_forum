@@ -5,6 +5,9 @@
 // @description  FB image link fixer on elakiri.com forum for SLT internet connections
 // @author       RavinduSha
 // @match        https://www.elakiri.com/forum/showthread.php?*=*
+// @match        https://www.elakiri.lk/forum/showthread.php?*=*
+// @match        https://www.elakiri.lk/forum*=*
+// @match        https://www.elakiri.com/forum*=*
 // @grant        none
 // ==/UserScript==
 
