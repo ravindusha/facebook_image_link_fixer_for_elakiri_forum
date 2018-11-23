@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Facebook image link fixer
+// @name         Facebook & Instagram image link fixer for elakiri forum
 // @namespace    http://tampermonkey.net/
-// @version      1.3
-// @description  FB image link fixer on elakiri.com forum for SLT internet connections
+// @version      2.0
+// @description  Facebook and Instagram image link fixer on elakiri.com forum for SLT internet connections
 // @author       RavinduSha
 // @match        https://www.elakiri.com/forum/showthread.php?*=*
 // @match        https://www.elakiri.lk/forum/showthread.php?*=*
@@ -14,15 +14,21 @@
 (function() {
     'use strict';
 
-    var allImg=document.getElementsByTagName("img"), i=0, img;
+    var allImg=document.getElementsByTagName("img"), i=0,j=0, img;
 
     var pattern = /^https?:\/\/scontent\.fcmb\d-1/;
+
+    var pattern_insta = /^https?:\/\/instagram\.fcmb\d-1/;
 
     while (img = allImg[i++])
     {
         if (img.src.match(pattern)) {
-            img.src = img.src.replace(pattern, 'http://scontent.fcmb2-1');
+            img.src = img.src.replace(pattern, 'https://scontent.fcmb2-1');
+        }
+        if (img.src.match(pattern_insta)) {
+            img.src = img.src.replace(pattern_insta, 'https://instagram.fcmb2-1');
         }
     }
+
 
 })();
