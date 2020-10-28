@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Facebook & Instagram image link fixer for elakiri forum
 // @namespace    http://tampermonkey.net/
-// @version      2.3
+// @version      2.4
 // @description  Facebook and Instagram image link fixer on elakiri.com forum for SLT internet connections
 // @author       RavinduSha
 // @match        https://www.elakiri.com/forum/showthread.php?*=*
