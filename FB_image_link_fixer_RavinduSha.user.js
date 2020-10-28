@@ -24,9 +24,9 @@
 
     var allImg=document.getElementsByTagName("img"), i=0,j=0, img;
 
-    var pattern = /^https?:\/\/scontent\.fcmb\d-1/;
+    var pattern = /^https?:\/\/scontent\.fcmb\d*-1/;
 
-    var pattern_insta = /^https?:\/\/instagram\.fcmb\d-1/;
+    var pattern_insta = /^https?:\/\/instagram\.fcmb\d*-1/;
 
     while (img = allImg[i++])
     {
