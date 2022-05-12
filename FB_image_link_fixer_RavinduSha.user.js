@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Facebook & Instagram image link fixer for elakiri forum
 // @namespace    http://tampermonkey.net/
-// @version      2.6
+// @version      2.7
 // @description  Facebook and Instagram image link fixer on elakiri.com forum for SLT internet connections
 // @author       RavinduSha
 // @match        https://www.elakiri.com/forum/showthread.php?*=*
@@ -32,12 +32,12 @@
     while (img = allImg[i++])
     {
         if (img.src.match(pattern)) {
-            img.src = img.src.replace(pattern, function(_,b){ return `https://scontent.fcmb${b==2 ?1:5}-${b}`});
+            img.src = img.src.replace(pattern, function(_,b){ return `https://scontent.fcmb${b==2 ?1:6}-${b}`});
         }else if(img.src.match(pattern_without_protocol)){
-            img.src = img.src.replace(pattern_without_protocol, function(_,b){ return `//scontent.fcmb${b==2 ?1:5}-${b}`});
+            img.src = img.src.replace(pattern_without_protocol, function(_,b){ return `//scontent.fcmb${b==2 ?1:6}-${b}`});
         }
         if (img.src.match(pattern_insta)) {
-            img.src = img.src.replace(pattern_insta, function(_,b){ return `//instagram.fcmb${b==2 ?1:5}-${b}`});
+            img.src = img.src.replace(pattern_insta, function(_,b){ return `//instagram.fcmb${b==2 ?1:6}-${b}`});
         }
     }
 
